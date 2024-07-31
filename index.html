@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <img src="newslogo.png" width="120px" alt="">
+    <div class="inputSearch dekstop">
+      <form id="searchForm">
+        <input type="text" placeholder="eg. Science">
+        <span><i class="fa-solid fa-search"></i></span>
+      </form>
+    </div>
+    <nav class="desktop">
+      <ul>
+        <li onclick="Search('environment')">Environment</li>
+        <li onclick="Search('movies')">Movies</li>
+        <li onclick="Search('sports')">Sports</li>
+        <li onclick="Search('tech')">Tech</li>
+      </ul>
+    </nav>
+    <div class="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!------>
+    <div class="mobile hidden">
+      <nav>
+        <ul>
+          <li onclick="Search('environment')">Environment</li>
+          <li onclick="Search('movies')">Movies</li>
+          <li onclick="Search('sports')">Sports</li>
+          <li onclick="Search('tech')">Tech</li>
+        </ul>
+      </nav>
+      <div class="inputSearch">
+        <form id="searchFormMobile" id="searchInputMobile">
+          <input type="text" placeholder="Type to search..." />
+          <span> <i class="fa-solid fa-search"></i></span>
+      </div>
+      </form>
+    </div>
+  </header>
+  <main></main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
